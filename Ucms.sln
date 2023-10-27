@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ucms.API", "Ucms.API\Ucms.API.csproj", "{A0F89C5E-FE4B-4571-AAC8-DCCBBF442861}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ucms.DAL.Abstract", "Ucms.DAL.Abstract\Ucms.DAL.Abstract.csproj", "{BB290F24-766C-4E2E-9555-F1E7962FB740}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ucms.DAL.Impl", "Ucms.DAL.Impl\Ucms.DAL.Impl.csproj", "{CE133DED-83EC-4160-8C72-686951B53994}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A0F89C5E-FE4B-4571-AAC8-DCCBBF442861}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0F89C5E-FE4B-4571-AAC8-DCCBBF442861}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0F89C5E-FE4B-4571-AAC8-DCCBBF442861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB290F24-766C-4E2E-9555-F1E7962FB740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB290F24-766C-4E2E-9555-F1E7962FB740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB290F24-766C-4E2E-9555-F1E7962FB740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB290F24-766C-4E2E-9555-F1E7962FB740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE133DED-83EC-4160-8C72-686951B53994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE133DED-83EC-4160-8C72-686951B53994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE133DED-83EC-4160-8C72-686951B53994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE133DED-83EC-4160-8C72-686951B53994}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
