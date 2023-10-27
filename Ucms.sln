@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ucms.DAL.Abstract", "Ucms.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ucms.DAL.Impl", "Ucms.DAL.Impl\Ucms.DAL.Impl.csproj", "{CE133DED-83EC-4160-8C72-686951B53994}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ucms.Entities", "Ucms.Entities\Ucms.Entities.csproj", "{ABB1E724-8D4F-4CAD-AEDD-E158C2A16F61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CE133DED-83EC-4160-8C72-686951B53994}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE133DED-83EC-4160-8C72-686951B53994}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE133DED-83EC-4160-8C72-686951B53994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB1E724-8D4F-4CAD-AEDD-E158C2A16F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB1E724-8D4F-4CAD-AEDD-E158C2A16F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB1E724-8D4F-4CAD-AEDD-E158C2A16F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB1E724-8D4F-4CAD-AEDD-E158C2A16F61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
