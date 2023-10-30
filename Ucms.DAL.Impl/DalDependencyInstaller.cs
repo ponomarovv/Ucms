@@ -1,6 +1,18 @@
-﻿namespace Ucms.DAL.Impl;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Ucms.DAL.Abstract.Repository;
+using Ucms.DAL.Abstract.Repository.Base;
+using Ucms.DAL.Impl.Repository;
+using Ucms.DAL.Impl.Repository.Base;
 
-public class DalDependencyInstaller
+namespace Ucms.DAL.Impl;
+
+public static class DalDependencyInstaller
 {
-    
+    public static void InstallRepositories(this IServiceCollection services)
+    {
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
+    }
 }
