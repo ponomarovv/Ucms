@@ -4,5 +4,5 @@ public class CreateDatabaseSql
 {
     public static string CreateDatabase { get; set; } = $"";
     public static string CreateTables { get; set; } = $"";
-    public static string SeedData { get; set; } = $"SELECT * FROM USERS";
+    public static string SeedData { get; set; } = $"";
 }
