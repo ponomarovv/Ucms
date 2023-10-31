@@ -28,7 +28,6 @@ public class DatabaseSeeder
         {
             connection.Open();
 
-            string databaseName = "UcmsDB";
             string createDbQuery = CreateDatabaseSql.createDbQuery;
 
             using (SqlCommand command = new SqlCommand(createDbQuery, connection))
