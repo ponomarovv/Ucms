@@ -1,4 +1,5 @@
 using Ucms.DAL.Impl;
+using Ucms.DAL.Impl.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,16 +10,10 @@ builder.Configuration.AddUserSecrets<Program>();
 
 
 // Add services to the container.
-builder.Services.AddSingleton<DatabaseSeeder>();
+
+builder.Services.SeedData();
+
 builder.Services.InstallRepositories();
-
-
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-
-var serviceProvider = builder.Services.BuildServiceProvider();
-var databaseSeeder = serviceProvider.GetRequiredService<DatabaseSeeder>();
-databaseSeeder.SeedDatabase();
-// builder.Services.SeedData();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

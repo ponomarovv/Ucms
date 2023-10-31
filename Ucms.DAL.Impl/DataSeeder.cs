@@ -17,8 +17,28 @@ public class DatabaseSeeder
     public void SeedDatabase()
     {
         string createDbConnectionString = _configuration.GetConnectionString("CreateDBConnection");
+        string connectionString = _configuration.GetConnectionString("DefaultConnection2");
 
-        CreateDatabase(createDbConnectionString);
+        if (!DatabaseExists(connectionString))
+        {
+            CreateDatabase(createDbConnectionString);
+        }
+    }
+
+    private bool DatabaseExists(string connectionString)
+    {
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            try
+            {
+                connection.Open();
+                return true;
+            }
+            catch (SqlException)
+            {
+                return false;
+            }
+        }
     }
 
 

@@ -4,7 +4,7 @@ using Ucms.DAL.Abstract.Repository.Base;
 using Ucms.DAL.Impl.Repository;
 using Ucms.DAL.Impl.Repository.Base;
 
-namespace Ucms.DAL.Impl;
+namespace Ucms.DAL.Impl.Extensions;
 
 public static class DalDependencyInstaller
 {
@@ -15,4 +15,6 @@ public static class DalDependencyInstaller
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
     }
+    
+   
 }
