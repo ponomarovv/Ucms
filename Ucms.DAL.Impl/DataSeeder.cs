@@ -1,6 +1,7 @@
 ﻿using System.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Ucms.DAL.Impl.SQL;
 
 namespace Ucms.DAL.Impl;
 
@@ -28,11 +29,7 @@ public class DatabaseSeeder
             connection.Open();
 
             string databaseName = "UcmsDB";
-            string createDbQuery =
-                $"IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = '{databaseName}')" +
-                $"BEGIN" +
-                $"   CREATE DATABASE {databaseName};" +
-                $"END;";
+            string createDbQuery = CreateDatabaseSql.createDbQuery;
 
             using (SqlCommand command = new SqlCommand(createDbQuery, connection))
             {
